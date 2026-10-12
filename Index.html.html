@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f5">
+<title>For Thewni, My Dapuli ♡</title>
+<style>
+:root{--pink:#e96b91;--deep:#a93d67;--pale:#fff0f5;--cream:#fffaf7;--ink:#593747}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#fff5f8,#fffaf7 50%,#fff0f5);color:var(--ink);font-family:Georgia,'Times New Roman',serif;text-align:center}
+button{font:inherit;cursor:pointer}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:42px 20px;position:relative;overflow:hidden}
+.eyebrow{font:700 .75rem/1.4 system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--deep)}
+h1{font-size:clamp(2.7rem,9vw,5.8rem);font-weight:normal;line-height:1.02;margin:20px 0;color:#a94169}
+h1 em{font-weight:normal;color:#e96b91}
+.subtitle{font-size:1.15rem;max-width:560px;line-height:1.7;margin:0 auto 24px}
+.heart{font-size:2rem;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.2)}}
+.float{position:absolute;opacity:.45;animation:drift 6s ease-in-out infinite;font-size:1.8rem;pointer-events:none}
+.f1{left:10%;top:18%}.f2{right:12%;top:25%;animation-delay:1s}.f3{left:17%;bottom:18%;animation-delay:2s}.f4{right:15%;bottom:15%;animation-delay:3s}
+@keyframes drift{50%{transform:translateY(-18px) rotate(10deg)}}
+.btn{border:0;border-radius:999px;background:var(--pink);color:white;padding:14px 23px;box-shadow:0 8px 22px #e96b9130;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:var(--deep)}
+.btn.secondary{background:#fff;color:var(--deep);border:1px solid #f2c5d4;box-shadow:none}
+section{padding:65px 18px;max-width:960px;margin:auto}
+.section-kicker{font:700 .7rem system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--pink)}
+h2{font-size:clamp(2rem,6vw,3.3rem);font-weight:normal;margin:12px 0 18px;color:#a94169}
+.copy{line-height:1.8;max-width:640px;margin:0 auto 25px;font-size:1.06rem}
+.countgrid{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px auto}
+.timebox{background:#fff;border:1px solid #f7d5df;border-radius:18px;padding:18px 15px;min-width:90px;box-shadow:0 8px 24px #a93d670b}
+.timebox strong{display:block;font:600 clamp(1.7rem,5vw,2.5rem) system-ui,sans-serif;color:#bd4f78}
+.timebox span{font: .72rem system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#966276}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px}
+.photo{min-height:190px;border:1px dashed #e8a6bd;border-radius:20px;background:linear-gradient(145deg,#fff,#ffeaf1);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.photo img{width:100%;height:100%;min-height:190px;object-fit:cover;position:absolute;inset:0}.photo.has-image span{display:none}
+.photo span{padding:20px;line-height:1.6}
+.photo small{display:block;font: .72rem system-ui,sans-serif;color:#a95a78;margin-top:8px}
+.letter{background:#fff;border:1px solid #f4d3de;border-radius:24px;padding:clamp(22px,5vw,42px);max-width:700px;margin:25px auto;box-shadow:0 14px 40px #a93d670d;text-align:left;line-height:1.95;font-size:1.08rem}
+.letter p:first-child{margin-top:0}.letter p:last-child{margin-bottom:0}
+.cake-wrap{padding:25px 0 10px}
+.cake{position:relative;width:180px;height:130px;margin:30px auto 20px;cursor:pointer;filter:drop-shadow(0 12px 8px #a93d6714);animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.plate{position:absolute;bottom:0;left:0;width:180px;height:18px;border-radius:50%;background:#f4c8d6}
+.cakebase{position:absolute;bottom:12px;left:20px;width:140px;height:55px;border-radius:10px 10px 15px 15px;background:#ef91ae;border-bottom:8px solid #dc6f94}
+.cakebase:before{content:"";position:absolute;top:10px;left:0;width:100%;height:12px;background:#fff0f5;border-radius:50%}
+.icing{position:absolute;bottom:60px;left:20px;width:140px;height:28px;border-radius:12px 12px 8px 8px;background:#fff0f5}
+.icing:after{content:"";position:absolute;right:20px;top:12px;width:12px;height:20px;border-radius:0 0 10px 10px;background:#fff0f5;box-shadow:-35px 0 #fff0f5,-70px 0 #fff0f5}
+.candle{position:absolute;bottom:86px;left:85px;width:10px;height:28px;border-radius:3px;background:repeating-linear-gradient(45deg,#fff 0 5px,#e96b91 5px 9px)}
+.flame{position:absolute;bottom:115px;left:83px;width:14px;height:20px;background:#ffbe55;border-radius:70% 30% 60% 40%;transform:rotate(45deg);box-shadow:0 0 20px #ffbe5588;animation:flicker .45s infinite alternate}
+@keyframes flicker{to{transform:rotate(35deg) scale(.86)}}
+.surprise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:25px}
+.surprise{background:#fff;border:1px solid #f4d3de;border-radius:18px;padding:20px 10px;color:var(--deep);min-height:125px;line-height:1.5}
+.surprise b{display:block;font-size:1.6rem;margin-bottom:8px}
+footer{padding:35px 20px 50px;color:#a66a82;font-size:.9rem}
+.modal{position:fixed;inset:0;background:#492033aa;display:none;align-items:center;justify-content:center;padding:18px;z-index:10}
+.modal.show{display:flex}
+.modal-card{background:#fff8fb;border-radius:24px;padding:30px;max-width:480px;width:100%;box-shadow:0 20px 80px #32102055}
+.modal-card h3{font-size:2rem;font-weight:normal;color:#a94169;margin:0 0 14px}
+.modal-card p{line-height:1.8}
+.close{margin-top:10px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+.confetti-piece{position:absolute;top:-20px;animation:fall 3.5s linear forwards;font-size:20px}
+@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:.2}}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.photo{min-height:230px}.photo img{min-height:230px}}
+@media(max-width:480px){.surprise-grid{grid-template-columns:1fr}.surprise{min-height:unset;padding:16px}.gallery{gap:9px}.photo{min-height:155px}.photo img{min-height:155px}}
+</style>
+</head>
+<body>
+<div id="confetti"></div>
+<header class="hero">
+  <span class="float f1">♡</span><span class="float f2">✧</span><span class="float f3">💕</span><span class="float f4">♡</span>
+  <div class="heart">♡</div>
+  <div class="eyebrow">A little something made just for you</div>
+  <h1>For my<br><em>Dapuli, Thewni</em></h1>
+  <p class="subtitle">Because one day isn't enough to celebrate someone as special as you, Thewni. Your Baby made this tiny corner of the internet just for you. I love you, Dapuli. 💗</p>
+  <button class="btn" onclick="document.querySelector('#countdown').scrollIntoView({behavior:'smooth'})">Our little countdown ↓</button>
+</header>
+
+<section id="countdown">
+  <div class="section-kicker">The day I'm waiting for</div>
+  <h2>Until your birthday…</h2>
+  <p class="copy">Every second brings us closer to celebrating you, Dapuli. I wish I could wrap all my love into one little gift. Until then, here's a countdown from your Baby. 🎀</p>
+  <div class="countgrid" aria-live="polite">
+    <div class="timebox"><strong id="days">--</strong><span>Days</span></div>
+    <div class="timebox"><strong id="hours">--</strong><span>Hours</span></div>
+    <div class="timebox"><strong id="minutes">--</strong><span>Minutes</span></div>
+    <div class="timebox"><strong id="seconds">--</strong><span>Seconds</span></div>
+  </div>
+  <p id="countdown-message" class="copy">Counting down to 15 November 2026 ♡</p>
+</section>
+
+<section id="memories">
+  <div class="section-kicker">Little pieces of us</div>
+  <h2>Our memories 📸</h2>
+  <p class="copy">Some of my favourite moments are the ones where I'm with you, Thewni. Every picture holds a little piece of our story. ♡</p>
+  <div class="gallery">
+    <div class="photo"><img src="photo1.jpg" alt="Our favourite photo" onload="this.parentElement.classList.add('has-image')" onerror="this.remove()"><span>Our favourite photo<small>Add photo1.jpg here</small></span></div>
+    <div class="photo"><img src="photo2.jpg" alt="A moment I'll keep forever" onload="this.parentElement.classList.add('has-image')" onerror="this.remove()"><span>A moment I'll keep forever<small>Add photo2.jpg here</small></span></div>
+    <div class="photo"><img src="photo3.jpg" alt="My favourite smile" onload="this.parentElement.classList.add('has-image')" onerror="this.remove()"><span>My favourite smile<small>Add photo3.jpg here</small></span></div>
+    <div class="photo"><img src="photo4.jpg" alt="Just us being us" onload="this.parentElement.classList.add('has-image')" onerror="this.remove()"><span>Just us being us<small>Add photo4.jpg here</small></span></div>
+    <div class="photo"><img src="photo5.jpg" alt="A day to remember" onload="this.parentElement.classList.add('has-image')" onerror="this.remove()"><span>A day to remember<small>Add photo5.jpg here</small></span></div>
+    <div class="photo"><img src="photo6.jpg" alt="One more memory" onload="this.parentElement.classList.add('has-image')" onerror="this.remove()"><span>One more, because why not? ♡<small>Add photo6.jpg here</small></span></div>
+  </div>
+  <p class="copy" style="font-size:.88rem;color:#a66a82;margin-top:18px">Photo tip: use images you both feel comfortable sharing online.</p>
+</section>
+
+<section id="letter">
+  <div class="section-kicker">Open when you need a hug</div>
+  <h2>A letter for you 💌</h2>
+  <div class="letter">
+    <p>My dearest Thewni, my Dapuli,</p>
+    <p>Happy almost-birthday, Dapuli — the girl who makes ordinary days feel special. Your Baby made this little page because I wanted you to have something you could open whenever you wanted a reminder of how deeply loved you are.</p>
+    <p>Thank you for being you — for the little moments, the laughs, the memories, and all the things that make our story ours. I hope this new year of your life brings you the kind of happiness you give to the people around you. I hope you feel proud of yourself, loved beyond words, and excited about all the beautiful things waiting for you.</p>
+    <p>No website could ever fit everything I feel for you, but this is one small way of saying: you matter to me so, so much. By November 18, we'll have reached one year and two months together — and I hope that is just one tiny chapter in a long, beautiful story. If I had to choose all over again, I'd still want to know you, choose you, and make more memories with you.</p>
+    <p>Happy birthday, my favourite person. Here's to you, to us, and to all the little moments still to come. ♡</p>
+    <p>Always yours,<br><strong>Your Baby 💗</strong></p>
+  </div>
+  <button class="btn secondary" onclick="openModal('hug')">A tiny virtual hug 🫂</button>
+</section>
+
+<section id="cake-section">
+  <div class="section-kicker">Make a wish, birthday girl</div>
+  <h2>A little cake just for you 🎂</h2>
+  <p class="copy">Tap the cake to blow out the candle, Dapuli. Don't forget to make a wish! Your Baby is cheering for you. ✨</p>
+  <div class="cake-wrap">
+    <div class="cake" role="button" tabindex="0" aria-label="Tap to blow out the candle" onclick="blowCandle()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();blowCandle()}">
+      <div class="plate"></div><div class="cakebase"></div><div class="icing"></div><div class="candle"></div><div class="flame" id="flame"></div>
+    </div>
+    <p id="cake-message" class="copy">Psst… tap the cake ♡</p>
+  </div>
+  <button class="btn" onclick="celebrate()">🎉 Send birthday sparkles!</button>
+</section>
+
+<section id="surprises">
+  <div class="section-kicker">A few little secrets</div>
+  <h2>Tap to unwrap 💝</h2>
+  <p class="copy">Three tiny reminders, just for you, Thewni — with all my love, from your Baby.</p>
+  <div class="surprise-grid">
+    <button class="surprise" onclick="openModal('reason')"><b>💗</b>One reason I love you</button>
+    <button class="surprise" onclick="openModal('promise')"><b>🎀</b>A little promise</button>
+    <button class="surprise" onclick="openModal('wish')"><b>🌷</b>A wish for your year</button>
+  </div>
+</section>
+
+<section id="song">
+  <div class="section-kicker">A song that reminds me of you</div>
+  <h2>Press play, my Dapuli 🎶</h2>
+  <p class="copy">“Ehema Baluwama Mage Diha” — a little soundtrack for thinking about you, Thewni. Tap below to find the song and play it while you explore this page. ♡</p>
+  <a class="btn" style="display:inline-block;text-decoration:none" href="https://www.youtube.com/results?search_query=ehema+baluwama+mage+diha" target="_blank" rel="noopener noreferrer">Find our song on YouTube ♡</a>
+</section>
+<footer>Made with so much love by your Baby, just for you, Thewni. ♡<br><span style="display:block;margin-top:8px">15 November 2026 · Your birthday countdown</span><span style="display:block;margin-top:6px">One year and two months together by 18 November 💗</span></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="if(event.target===this)closeModal()">
+  <div class="modal-card">
+    <div class="heart">♡</div><h3 id="modal-title">For you</h3><p id="modal-text"></p>
+    <button class="btn close" onclick="closeModal()">Keep this hug 💗</button>
+  </div>
+</div>
+
+<script>
+const birthday = new Date(2026, 10, 15, 0, 0, 0); // local time, November is month 10
+function updateCountdown(){
+  const now = new Date();
+  let diff = birthday - now;
+  if(diff <= 0){
+    ['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='0');
+    document.getElementById('countdown-message').textContent = "It's your birthday, my love! Happy birthday! 🎂💗";
+    return;
+  }
+  const d=Math.floor(diff/86400000); diff%=86400000;
+  const h=Math.floor(diff/3600000); diff%=3600000;
+  const m=Math.floor(diff/60000); diff%=60000;
+  const s=Math.floor(diff/1000);
+  document.getElementById('days').textContent=d;
+  document.getElementById('hours').textContent=h;
+  document.getElementById('minutes').textContent=m;
+  document.getElementById('seconds').textContent=s;
+}
+updateCountdown();setInterval(updateCountdown,1000);
+const messages={
+ hug:['A hug, just for you 🫂','Imagine the biggest, warmest hug from me. Hold it for as long as you need. You never have to earn love by having a perfect day. I’m cheering for you, always. ♡'],
+ reason:['One reason I love you, Dapuli 💗','I love the way being around you can turn an ordinary little moment into a memory I want to keep. There is something so special about being able to call you mine, Thewni. ♡'],
+ promise:['A little promise, my love 🎀','Your Baby promises to keep learning how to love you better: to listen, to be honest, to celebrate your wins, and to make space for the real you — even on the difficult days.'],
+ wish:['My wish for your year, Thewni 🌷','I hope this year brings you peace when life feels loud, courage when things feel uncertain, people who appreciate your heart, and so many reasons to smile. And I hope your Baby gets to share lots of those moments with you. Happy birthday, my Dapuli. ♡']
+};
+function openModal(key){document.getElementById('modal-title').textContent=messages[key][0];document.getElementById('modal-text').textContent=messages[key][1];document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function blowCandle(){const f=document.getElementById('flame');f.style.display='none';document.getElementById('cake-message').textContent='Wish made! I hope it comes true, birthday girl. ✨💗';celebrate()}
+function celebrate(){const holder=document.getElementById('confetti');const icons=['💗','💕','✨','🌸','♡','🎀'];for(let i=0;i<36;i++){const el=document.createElement('span');el.className='confetti-piece';el.textContent=icons[Math.floor(Math.random()*icons.length)];el.style.left=Math.random()*100+'%';el.style.animationDelay=Math.random()*.9+'s';el.style.fontSize=(14+Math.random()*17)+'px';holder.appendChild(el);setTimeout(()=>el.remove(),4500)}}
+</script>
+</body>
+</html>
